@@ -12,7 +12,7 @@ parent-id: lab-1
 ![First application](/media/lab1/lab_1_archi.png)
 {% endcollapsible %}
 
-Let's look at a few parameters you need to create an App Service app:
+Let's look at some parameters you need to create an App Service app:
 
 - **the name**: the name of the application must be globally unique
 - **the publication format**: App Service publishes your application direclty from your code or using a Docker container
@@ -26,7 +26,7 @@ Let's look at a few parameters you need to create an App Service app:
 
 Let's start by creating the resource group for this Hand's On Lab.
 
-> For the purpose of this lab we will create all the resources in the same region, for instance West US (westus) or North Europe (northeurope).
+> For the purpose of this lab, we will create all the resources in the same region for instance West US (westus) or North Europe (northeurope).
 
 Remember, the naming convention for resource groups will be: `rg-<environment>-<region>-<application-name>-<owner>-<instance>`
 
@@ -42,9 +42,9 @@ az group create --name $RESOURCE_GROUP --location "$LOCATION"
 
 #### Create an App Service Plan 
 
-To be able to deploy App Service you need to have a Service Plan associated to it which define the infrastructure properties you need.
+To be able to deploy App Service you need to have a [Service Plan](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) associated to it which define the infrastructure properties you need.
 
-Let's define a [Linux App Service Plan](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) with a Standard sku.
+Let's create a [Linux App Service Plan](https://learn.microsoft.com/en-us/cli/azure/appservice/plan?view=azure-cli-latest) with a Standard tier.
 
 Remember, the naming convention for App Service Plan will be: `aps-<environment>-<region>-<application-name>-<owner>-<instance>`
 
@@ -54,7 +54,7 @@ Solution:
 
 ```bash
 APP_SERVICE_PLAN="<your-app-service-plan-name>"
-# Create an App Service Standard plan with 4 Linux machine instances
+# Create an App Service Standard plan with 4 Linux workers
 az appservice plan create -g $RESOURCE_GROUP -n $APP_SERVICE_PLAN --is-linux --number-of-workers 4 --sku S1
 ```
 

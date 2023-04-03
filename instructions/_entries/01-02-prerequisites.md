@@ -10,7 +10,7 @@ parent-id: intro
 This workshop will require the following:
 
 - Access to the [Azure Portal](https://portal.azure.com) subscription
-- [Azure CLI](https://github.com/Azure/azure-cli) (**>= 2.30**)
+- [Azure CLI](https://github.com/Azure/azure-cli)
 - [VS Code](https://code.visualstudio.com/) or equivalent
 - [Visual Studio 2022](https://visualstudio.microsoft.com/fr/vs/)
 - A [Github](https://github.com/join) account
