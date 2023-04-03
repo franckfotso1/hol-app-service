@@ -5,7 +5,6 @@ title: Naming conventions
 parent-id: intro
 ---
 
-### Naming convention
 
 Before starting to deploy any Azure services, it's important to follow a naming convention. Based on the official [documentation][az-naming-convention] we need to define a few things:
 

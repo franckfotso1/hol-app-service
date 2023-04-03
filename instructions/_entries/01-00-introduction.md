@@ -6,8 +6,8 @@ type: nocount
 is-parent: yes
 ---
 
-This document is a support for an **introduction to AppService and its concepts**. Through various activities, the goal will be to discover the functionalities of this service.
+Welcome to the App Service workshop. In this micro OpenHack, you’ll go through tasks that will help you master the basics and more advanced topics required to deploy applications to App Service.
 
-If you find a problem or have a comment, do not hesitate to contact the contributors.
+If you find a problem or have a comment, don't hesitate to contact the contributors.
 
-> This workshop is **NOT** an official product group resource, so it may not be up to date with the latest features, but we are working to make it happen. Feel free to read the official documentation [to learn more about App Service](https://learn.microsoft.com/en-us/azure/app-service/).
+> This workshop is **NOT** an official resource from the product group, so it may not be up to date with the latest features, but we are working to do so. Don't hesitate to read the [official documentation](https://learn.microsoft.com/en-us/azure/app-service/) to learn more about App Service.

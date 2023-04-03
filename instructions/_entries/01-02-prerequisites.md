@@ -12,36 +12,24 @@ This workshop will require the following:
 - Access to the [Azure Portal](https://portal.azure.com) subscription
 - [Azure CLI](https://github.com/Azure/azure-cli) (**>= 2.30**)
 - [VS Code](https://code.visualstudio.com/) or equivalent
+- [Visual Studio 2022](https://visualstudio.microsoft.com/fr/vs/)
 - A [Github](https://github.com/join) account
 
-### Install Azure CLI
+- ### Install Azure CLI
 
 If the CLI is not installed, just follow [this link](https://docs.microsoft.com/fr-fr/cli/azure/install-azure-cli) to do it and follow the tab corresponding to your operating system.
 
-If your CLI is already installed, upgrade it to be sure to have the lastest version
+#### Log in to your Azure subscription using Azure CLI and inside the [Azure Portal](https://portal.azure.com)
 
 {% collapsible %}
 
 ```bash
-az version
-# If version az-core <= 2.30
-az upgrade
-```
-
-{% endcollapsible %}
-
-#### Log in to your subscription
-
-{% collapsible %}
-
-```bash
+# Login to Azure
 az login
-# Choose the subscription
-az account set –s <subscription-id> 
-# Verify subscription
+# Display your account details
 az account show
+# Choose a specific subscription 
+az account set –s <subscription-id> 
 ```
-
-Connect to the [Azure Portal](https://portal.azure.com) 
 
 {% endcollapsible %}
